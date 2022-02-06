@@ -1,9 +1,8 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
+  Routes,Route
 } from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
@@ -13,19 +12,16 @@ import Oppurtunities from './components/Oppurtunities';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/signup">
-          <Signup />
-        </Route>
-        <Route path="/oppurtunity">
-          <Oppurtunities />
-        </Route>
-      </Routes>
-    </Router>
+
+    <ChakraProvider>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/oppurtunity" element={<Oppurtunities />} />
+        </Routes>
+      </Router>
+    </ChakraProvider>
   );
 }
 
