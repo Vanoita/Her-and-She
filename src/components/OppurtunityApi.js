@@ -7,7 +7,8 @@ const Opp =[
     apply_by: "13/2/22",
     category:"Full-time",
     type:"Tech",
-    location:"USA"
+    location:"USA",
+    email:"abc@gmail.com"
 },
 {
     id: 2,
@@ -17,7 +18,8 @@ const Opp =[
     apply_by: "1/3/22",
     category:"Full-time",
     type:"Tech",
-    location:"India"
+    location:"India",
+    email:"abc@gmail.com"
 },
 {
     id: 3,
@@ -27,7 +29,8 @@ const Opp =[
     apply_by: "21/2/22",
     category:"Part-time",
     type:"Business",
-    location:"India"
+    location:"India",
+    email:"abc@gmail.com"
 
 },
 {
@@ -38,7 +41,8 @@ const Opp =[
     apply_by: "15/2/22",
     category:"Full-time",
     type:"Finance",
-    location:"UK"
+    location:"UK",
+    email:"abc@gmail.com"
 },
 {
     id: 5,
@@ -48,7 +52,8 @@ const Opp =[
     apply_by: "19/2/22",
     category:"Part-time",
     type:"Business",
-    location:"Japan"
+    location:"Japan",
+    email:"abc@gmail.com"
 },
 {
     id: 6,
@@ -58,7 +63,8 @@ const Opp =[
     apply_by: "31/3/22",
     category:"Competition",
     type:"Tech",
-    location:"Global"
+    location:"Global",
+    email:"abc@gmail.com"
 },
 {
     id: 7,
@@ -68,7 +74,8 @@ const Opp =[
     apply_by: "9/3/22",
     category:"Competiton",
     type:"Business",
-    location:"USA"
+    location:"USA",
+    email:"abc@gmail.com"
 }
 
 ];
