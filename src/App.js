@@ -12,12 +12,14 @@ import Signup from './components/Signup';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </Router>
+    <ChakraProvider>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </Router>
+    </ChakraProvider>
   );
 }
 
