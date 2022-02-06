@@ -1,11 +1,23 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react'
+import { Stack, Box, Image, Flex, Heading } from '@chakra-ui/react'
+import { GoogleOutlined, FacebookOutlined } from '@ant-design/icons';
+import HomeImage from '../assests/Home.png'
 
 function Home() {
     return (
-        <ChakraProvider>
+        <div className="home">
+            <Flex direction='column' alignItems='center'>
+                <Heading>Her & She</Heading>
+                <Stack direction={['column', 'row']} spacing='24px'>
+                    <Box>
+                        <Image src={HomeImage} boxSize={600} />
+                    </Box>
+                    <Box>
+                    </Box>
+                </Stack>
+            </Flex>
 
-        </ChakraProvider>
+        </div>
     )
 }
 
