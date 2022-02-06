@@ -8,16 +8,18 @@ import {
 import './App.css';
 import Home from './components/Home';
 import Signup from './components/Signup';
-
+import { AuthProvider } from './context/AuthContext'
 
 function App() {
   return (
     <ChakraProvider>
       <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </AuthProvider>
       </Router>
     </ChakraProvider>
   );
